@@ -8,3 +8,5 @@ before_install:
 cache: yarn
 script:
   - yarn test && yarn build:prod
+ notifications:
+    slack: 'sreerampr:kXGUWG8GaFrNso3wE5UhJEjV'
