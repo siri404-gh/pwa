@@ -7,4 +7,4 @@ before_install:
   - export PATH="$HOME/.yarn/bin:$PATH"
 cache: yarn
 script:
-  - yarn test && yarn lint && yarn build:prod
+  - yarn test && yarn build:prod
