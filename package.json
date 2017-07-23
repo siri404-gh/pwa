@@ -16,6 +16,7 @@
     "cross-env": "^5.0.1",
     "css-loader": "^0.28.4",
     "deepfreeze": "^2.0.0",
+    "ejs": "^2.5.6",
     "eslint": "^4.3.0",
     "eslint-config-airbnb": "^15.0.2",
     "eslint-plugin-import": "^2.7.0",
@@ -54,13 +55,13 @@
   },
   "scripts": {
     "start": "node server",
-    "secure": "cross-env PROTOCOL=https nodemon server/index",
     "build": "./node_modules/.bin/webpack",
     "build:dev": "./node_modules/.bin/webpack-dev-server --env=dev --progress --profile --colors --open",
     "build:dev:https": "./node_modules/.bin/webpack-dev-server --env=dev --progress --profile --colors --open --https",
     "build:prod": "./node_modules/.bin/webpack --env=prod --progress --profile --colors",
     "test": "karma start",
     "lint": "./node_modules/.bin/eslint src/",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "heroku": "yarn build:prod && yarn start"
   }
 }
