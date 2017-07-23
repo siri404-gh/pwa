@@ -1,1 +1,1 @@
-web: yarn build:dev
+web: yarn heroku

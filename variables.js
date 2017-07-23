@@ -4,7 +4,7 @@ module.exports = {
   dist: './.dist',
   'prod': './.prod',
   bundle: 'bundle.js',
-  port: 5000,
+  port: process.env.PORT || 5000,
   devPublicPath: '/',
   prodPublicPath: '/'
 };
