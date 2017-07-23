@@ -1,7 +1,7 @@
 const express = require('express');
 const https = require('https');
 const fs = require('fs');
-const variables = require('../variables');
+const variables = require('./variables');
 
 const webRoot = `./${variables.dist}/`;
 const port = process.env.PORT || variables.port;

@@ -12,6 +12,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "clean-webpack-plugin": "^0.1.16",
+    "commitizen": "^2.9.6",
     "cross-env": "^5.0.1",
     "css-loader": "^0.28.4",
     "deepfreeze": "^2.0.0",
@@ -52,13 +53,14 @@
     "webpack-merge": "^4.1.0"
   },
   "scripts": {
-    "start": "nodemon server/index",
+    "start": "node server",
     "secure": "cross-env PROTOCOL=https nodemon server/index",
     "build": "./node_modules/.bin/webpack",
     "build:dev": "./node_modules/.bin/webpack-dev-server --env=dev --progress --profile --colors --open",
     "build:dev:https": "./node_modules/.bin/webpack-dev-server --env=dev --progress --profile --colors --open --https",
     "build:prod": "./node_modules/.bin/webpack --env=prod --progress --profile --colors",
     "test": "karma start",
-    "lint": "./node_modules/.bin/eslint src/"
+    "lint": "./node_modules/.bin/eslint src/",
+    "commit": "git-cz"
   }
 }
