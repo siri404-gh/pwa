@@ -17,3 +17,5 @@ karma coverage
 travis
 heroku
 eslint
+
+slack integrations
