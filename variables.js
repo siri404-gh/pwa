@@ -6,5 +6,8 @@ module.exports = {
   bundle: 'bundle.js',
   port: process.env.PORT || 5000,
   devPublicPath: '/',
-  prodPublicPath: '/'
+  prodPublicPath: '/',
+  karma_files: './src/**/*.test.js',
+  karma_browsers: ['PhantomJS'],
+  karma_coverage_dir: '.coverage/'
 };
