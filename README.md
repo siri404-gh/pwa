@@ -9,13 +9,10 @@ webpackmanifestplugin
 webpack-dev-server
 hotmodulereplacement
 vagrant
-
 jasmine
 karma
 karma coverage
-
 travis
 heroku
 eslint
-
 slack integrations
